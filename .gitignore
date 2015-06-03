@@ -1,0 +1,13 @@
+# Visual Studio
+*.sln
+*.suo
+
+# Dependencies NPM
+node_modules/
+
+# Images
+*.psd
+
+# Nihongo
+dist/*
+!dist/.gitignore
