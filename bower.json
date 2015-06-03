@@ -11,7 +11,7 @@
     "url": "https://github.com/AlexAltea/nihongo.git"
   },
   "dependencies": {
-    "angular": "^1.3.3",
+    "angular": "^1.4.0",
     "angular-resource": "^1.3.3",
     "angular-route": "~1.3.4",
     "bootstrap": "^3.2.0"
