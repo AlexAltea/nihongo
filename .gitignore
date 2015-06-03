@@ -8,6 +8,5 @@ node_modules/
 # Images
 *.psd
 
-# Nihongo
-dist/*
-!dist/.gitignore
+# Scripts
+*.bat
