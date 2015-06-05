@@ -14,7 +14,6 @@ function getParameterByName(name) {
 $(document).ready(function () {
 	// Configuration file was given
 	var configUrl = getParameterByName('config');
-	alert(configUrl);
 	if (configUrl) {
 		configLoadFile(configUrl);
 	}
@@ -23,4 +22,26 @@ $(document).ready(function () {
 /**
  * Nihongo App
  */
+ 
+// Module
 var nihongo = angular.module('nihongo', ['ngResource', 'ngRoute']);
+
+// Routing
+nihongo.config(['$routeProvider', function ($routeProvider) {
+    $routeProvider
+        .when('/', {
+            templateUrl: 'views/intro.html',
+        })
+		.when('/hiragana', {
+            templateUrl: 'views/hiragana.html',
+            controller: 'NihongoHiraganaController'
+        })
+		.when('/katakana', {
+            templateUrl: 'views/katakana.html',
+            controller: 'NihongoKatakanaController'
+        })
+        .when('/vocabulary', {
+            templateUrl: 'views/vocabulary.html',
+            controller: 'NihongoVocabularyController'
+        });
+}]);

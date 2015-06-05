@@ -15,22 +15,32 @@
     </head>
 
     <body>
-        <!-- Sidebar -->
-        <div class="sidebar" ng-controller="NihongoSidebar">
-            <ul id="sidebar-tasks">
-                <li ng-repeat="task in config.tasks | filter:isTaskVocabulary">
-                    blah
+        <!-- Main sidebar -->
+        <div class="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">日本語 / NIHONGO</a></li>
+                <li>
+                    <a href="#hiragana"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Hiragana</a>
                 </li>
-            </ul>
-            <ul id="sidebar-stats">
-            </ul>
-            <ul id="sidebar-about">
+                <li>
+                    <a href="#katakana"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Katakana</a>
+                </li>
+                <li>
+                    <a href="#vocabulary"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Vocabulary</a>
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Stats
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> About
+                </li>
             </ul>
         </div>
         
         <!-- Main container -->
-		Hi
-        <div ng-view></div>
+        <div style="padding-left: 250px">
+            <div ng-view></div>
+        </div>
 
         <hr/>
 

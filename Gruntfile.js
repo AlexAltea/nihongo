@@ -78,8 +78,8 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: '<%= yeoman.app %>/scripts/{,*/}*.ts',
-                tasks: ['typescript']
+                files: '<%= yeoman.app %>/scripts/{,*/}*.js',
+                tasks: ['uglify']
             },
             styles: {
                 files: '<%= yeoman.app %>/styles/{,*/}*.css',
