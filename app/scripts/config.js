@@ -124,19 +124,68 @@ var config = {
         ]
       }
     },
-    /*{
+    {
       "type": "vocabulary",
       "name": "Minna no Nihongo: L4",
       "data": {
         "words": [
+          {"romaji":"okimasu", "kana":"おきます", "kanji":"起きます", "meaning":"aufstehen"},
+          {"romaji":"nemasu", "kana":"ねます", "kanji":"寝ます", "meaning":"schlafen, ins Bett gehen"},
+          {"romaji":"hatarakimasu", "kana":"はたらきます", "kanji":"働きます", "meaning":"arbeiten"},
+          {"romaji":"yasumimasu", "kana":"やすみます", "kanji":"休みます", "meaning":"Pause machen, sich ausruhen, urlaub nehmen"},
+          {"romaji":"benkyoushimasu", "kana":"べんきょうします", "kanji":"勉強します", "meaning":"studieren, lernen"},
+          {"romaji":"owarimasu", "kana":"おわります", "kanji":"終わります", "meaning":"enden"},
+          {"romaji":"depa-to", "kana":"デパート", "kanji":"", "meaning":"Kaufhaus"},
+          {"romaji":"ginkou", "kana":"ぎんこう", "kanji":"銀行", "meaning":"Bank"},
+          {"romaji":"yuubinkyoku", "kana":"ゆうびんきょく", "kanji":"郵便局", "meaning":"Postamt"},
+          {"romaji":"toshokan", "kana":"としょかん ", "kanji":"図書館", "meaning":"Bibliothek"},
+          {"romaji":"bijutsukan", "kana":"びじゅつかん", "kanji":"美術館", "meaning":"Kunstmuseum"},
+          {"romaji":"ima", "kana":"いま", "kanji":"今", "meaning":"jetzt"},
+          {"romaji":"〜ji", "kana":"〜じ", "kanji":"〜時", "meaning":"〜 Uhr"},
+          {"romaji":"〜fun", "kana":"〜ふん", "kanji":"〜分", "meaning":"〜 Minute/-n"},
+          {"romaji":"han", "kana":"はん", "kanji":"半", "meaning":"Hälfte, halb"},
+          {"romaji":"nanji", "kana":"なんじ", "kanji":"何時", "meaning":"wie spät, wie viel Uhr"},
+          {"romaji":"nanpun", "kana":"なんぷん", "kanji":"何分", "meaning":"welche Minute, wie viel Minuten"},
+          {"romaji":"gozen", "kana":"ごぜん", "kanji":"午前", "meaning":"Vormittag, vormittags, morgens"},
+          {"romaji":"gogo", "kana":"ごご", "kanji":"午後", "meaning":"Nachmittag, nicahmittags"},
+          {"romaji":"asa", "kana":"あさ", "kanji":"朝", "meaning":"Morgen, morgens"},
+          {"romaji":"hiru", "kana":"ひる", "kanji":"昼", "meaning":"Mittag, mittags"},
+          {"romaji":"ban", "kana":"ばん", "kanji":"晩", "meaning":"Abend, abends (Nacht, nachts)"},
+          {"romaji":"ototoi", "kana":"おととい", "kanji":"", "meaning":"vorgestern"},
+          {"romaji":"kinou", "kana":"きのう", "kanji":"", "meaning":"gestern"},
+          {"romaji":"kyou", "kana":"きょう", "kanji":"", "meaning":"heute"},
+          {"romaji":"ashita", "kana":"あした", "kanji":"", "meaning":"morgen"},
+          {"romaji":"asatte", "kana":"あさって", "kanji":"", "meaning":"übermorgen"},
+          {"romaji":"kesa", "kana":"けさ", "kanji":"", "meaning":"heute Morgen"},
+          {"romaji":"konban", "kana":"こんばん", "kanji":"今晩", "meaning":"heute Abend"},
+          {"romaji":"yasumi", "kana":"やすみ", "kanji":"休み", "meaning":"Pause, freier Tag, Ruhetag, Ferien"},
+          {"romaji":"hiruyasumi", "kana":"ひらやすみ", "kanji":"昼休み", "meaning":"Mittagspause"},
+          {"romaji":"shiken", "kana":"しけん", "kanji":"試験", "meaning":"Prüfung"},
+          {"romaji":"kaigi", "kana":"かいぎ", "kanji":"会議", "meaning":"Konferenz"},
+          {"romaji":"eiga", "kana":"えいが", "kanji":"映画", "meaning":"Film"},
+          {"romaji":"maiasa", "kana":"まいあさ", "kanji":"毎朝", "meaning":"jeden Morgen"},
+          {"romaji":"maiban", "kana":"まいばん", "kanji":"毎晩", "meaning":"jeden Abend"},
+          {"romaji":"mainichi", "kana":"まいにち", "kanji":"毎日", "meaning":"jeden Tag"},
+          {"romaji":"getsuyoubi", "kana":"げつようび", "kanji":"月曜日", "meaning":"Montag"},
+          {"romaji":"kayoubi", "kana":"かようび", "kanji":"火曜日", "meaning":"Dienstag"},
+          {"romaji":"suiyoubi", "kana":"すいようび", "kanji":"水曜日", "meaning":"Mittwoch"},
+          {"romaji":"mokuyoubi", "kana":"もくようび", "kanji":"木曜日", "meaning":"Donnerstag"},
+          {"romaji":"kinyoubi", "kana":"きにょうび", "kanji":"金曜日", "meaning":"Freitag"},
+          {"romaji":"doyoubi", "kana":"どようび", "kanji":"土曜日", "meaning":"Samstag"},
+          {"romaji":"nichiyoubi", "kana":"にちようび", "kanji":"日曜日", "meaning":"Sonntag"},
+          {"romaji":"nanyoubi", "kana":"なにょうび", "kanji":"何曜日", "meaning":"welcher Wochentag"},
+          {"romaji":"〜kara", "kana":"〜から", "kanji":"", "meaning":"von 〜"},
+          {"romaji":"〜made", "kana":"〜まで", "kanji":"", "meaning":"bis 〜"},
+          {"romaji":"〜to〜", "kana":"〜と〜", "kanji":"", "meaning":"〜 und 〜 (Verbindung von Nomina)"},
         ]
       }
-    },
+    }/*,
     {
       "type": "vocabulary",
       "name": "Minna no Nihongo: L5",
       "data": {
         "words": [
+          {"romaji":"", "kana":"", "kanji":"", "meaning":""},
         ]
       }
     },
