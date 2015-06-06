@@ -70,6 +70,7 @@
 
 .taskbar-nav .glyphicon {
     position: relative;
-    top: 4px;
+    top: 3px;
+    right: 1px;
     font-size: 18px;
 }

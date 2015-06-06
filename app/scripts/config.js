@@ -11,11 +11,11 @@ var config = {
       "name": "Minna no Nihongo: L1",
       "data": {
         "words": [
-          {"romaji":"watashi", "kana":"わたし", "kanji":"わたし", "meaning":"ich"},
-          {"romaji":"anata", "kana":"あなた", "kanji":"あなた", "meaning":"Sie"},
+          {"romaji":"watashi", "kana":"わたし", "kanji":"", "meaning":"ich"},
+          {"romaji":"anata", "kana":"あなた", "kanji":"", "meaning":"Sie"},
           {"romaji":"anohito", "kana":"あのひと", "kanji":"あの人", "meaning":"er, sie, die Person dort drüben"},
-          {"romaji":"〜san", "kana":"〜さん", "kanji":"〜さん", "meaning":"Herr, Frau (respektvolle Anrede)"},
-          {"romaji":"〜chan", "kana":"〜ちゃん", "kanji":"〜ちゃん", "meaning":"(Suffix, das für Vornamen von Kindern an Stelle von 〜さん verwendet wird)"},
+          {"romaji":"〜san", "kana":"〜さん", "kanji":"", "meaning":"Herr, Frau (respektvolle Anrede)"},
+          {"romaji":"〜chan", "kana":"〜ちゃん", "kanji":"", "meaning":"(Suffix, das für Vornamen von Kindern an Stelle von 〜さん verwendet wird)"},
           {"romaji":"〜jin", "kana":"〜じん", "kanji":"〜人", "meaning":"(Suffix, die die Nationalität ausdrückt)"},
           {"romaji":"sensei", "kana":"せんせい", "kanji":"先生", "meaning":"Lehrer/-in, Dozent/-in (wird nicht für den eigenen Berug verwendet)"},
           {"romaji":"kyoushi", "kana":"きょうし", "kanji":"教師", "meaning":"Lehrer/-in, Dozent/-in"},
@@ -27,11 +27,11 @@ var config = {
           {"romaji":"kenkyuusha", "kana":"けんきゅうしゃ", "kanji":"研究者", "meaning":"Forscher/-in"},
           {"romaji":"daigaku", "kana":"だいがく", "kanji":"大学", "meaning":"Universität"},
           {"romaji":"byouin", "kana":"びょういん", "kanji":"病院", "meaning":"Krankenhaus"},
-          {"romaji":"dare", "kana":"だれ", "kanji":"だれ", "meaning":"wer"},
+          {"romaji":"dare", "kana":"だれ", "kanji":"", "meaning":"wer"},
           {"romaji":"〜sai", "kana":"〜さい", "kanji":"〜歳", "meaning":"〜 Jahre alt"},
           {"romaji":"nansai", "kana":"なんさい", "kanji":"何歳", "meaning":"wie alt"},
-          {"romaji":"hai", "kana":"はい", "kanji":"はい", "meaning":"ja"},
-          {"romaji":"iie", "kana":"いいえ", "kanji":"いいえ", "meaning":"nein"}
+          {"romaji":"hai", "kana":"はい", "kanji":"", "meaning":"ja"},
+          {"romaji":"iie", "kana":"いいえ", "kanji":"", "meaning":"nein"}
         ]
       }
     },

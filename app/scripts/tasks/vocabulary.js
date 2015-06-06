@@ -7,6 +7,12 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
     // Statistics
     localStorageService.bind($scope, 'scoreGood');
     localStorageService.bind($scope, 'scoreBad');
+    $scope.scoreGood = $scope.scoreGood || 0;
+    $scope.scoreBad = $scope.scoreBad || 0; 
+    $scope.resetScore = function () {
+        $scope.scoreGood = 0;
+        $scope.scoreBad = 0;
+    }
     
     // Current word
     $scope.currentWord = {};
@@ -25,7 +31,7 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
     $scope.checkInput = function () {
         var expected = $scope.currentWord.kana.trim();
         var given = $scope.currentInput.trim();
-        var ignoredChars = ["〜","~"," "];
+        var ignoredChars = ["〜", "~", "(", ")", "[", "]", " "];
         for (var i = 0; i < ignoredChars.length; i++) {
             expected = expected.replace(ignoredChars[i], "");
             given = given.replace(ignoredChars[i], "");
@@ -33,7 +39,8 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
         given = given.replace("n", "ん");
         given = given.replace("N", "ン");
         
-        if (expected == given) {
+        if ((expected == given) ||
+            ($scope.currentWord.kana.startsWith("[お]") && expected == ("お" + given))) {
             $scope.scoreGood += 1;
         }
         else {

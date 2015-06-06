@@ -5,10 +5,10 @@
         <li ng-repeat="collection in collections | filter:{ source: 'demo' }">
             <a ng-click="collection.active = !collection.active">
                 <span ng-if="collection.active">
-                    <span class="glyphicon glyphicon-ok-sign"></span>
+                    <span class="glyphicon glyphicon-ok"></span>
                 </span>
                 <span ng-if="!collection.active">
-                    <span class="glyphicon glyphicon-remove-sign"></span>
+                    <span class="glyphicon glyphicon-remove"></span>
                 </span>
                 <span >
                     {{ collection.name }}
@@ -42,35 +42,37 @@
         <ul>
             <li>Hiragana is written via lowercase characters. E.g. <i><code>watashi</code> &rarr; わたし</i></li>
             <li>Katakana is written via uppercase characters. E.g. <i><code>KAMERA</code> &rarr; カメラ</i></li>
-            <li>A katakana dash is written via a minus character. E.g. <i><code>NO-TO</code> &rarr; ノート</i></li>
-            <li>A っ/ッ-pause is written by repeating the first consonant of the next syllable. E.g. <i><code>kitte</code> &rarr; きって</i> or <i><code>KOPPU</code> &rarr; コップ</i></li>
+            <li>A long katakana vowel is written via a minus character. E.g. <i><code>NO-TO</code> &rarr; ノート</i></li>
+            <li>A っ/ッ-sokuon is written by repeating the first consonant of the next syllable. E.g. <i><code>kitte</code> &rarr; きって</i> or <i><code>KOPPU</code> &rarr; コップ</i></li>
         </ul>
     </p>
     
     <hr/>
-        
+    
+    <h3>Exercise</h3>
     <form>
-        <span><b>Word:</b></span>
-        <span>{{ currentWord.meaning }}</span>
-        <br/>
-        <span><b>Input:</b></span>
-        <input type="text" class="form-control" ng-model="currentInput" id="vocabularyInput" />
+        <span>
+            <b>Word:</b> {{ currentWord.meaning }}
+        </span>
         
-        <br/>
-        
-        <button ng-click="checkInput()" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Just press <i>Enter</i>">
+        <input type="text" class="form-control" ng-model="currentInput" id="vocabularyInput" placeholder="Write here..."/>
+                
+        <button ng-click="checkInput()" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Just press <i>Enter</i>">
             <span class="glyphicon glyphicon-check"></span> Submit
         </button>
-        <button ng-click="getNewWord()" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Just press <i>Esc</i>">
+        <button ng-click="getNewWord()" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Just press <i>Esc</i>">
             <span class="glyphicon glyphicon-share-alt"></span> Skip
         </button>
     </form>
     
     <hr/>
     
-    <b>Results</b>
+    <h3>Results</h3>
     <ul>
         <li>Correct answers: {{ scoreGood }}</li>
         <li>Incorrect answers: {{ scoreBad }}</li>
     </ul>
+    <button ng-click="resetScore()" class="btn">
+        <span class="glyphicon glyphicon-repeat"></span> Reset
+    </button>
 </div>

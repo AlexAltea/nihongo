@@ -1,5 +1,19 @@
 #vocabularyInput {
+	margin-bottom: 10px;
 	font-size: 50px;
 	height: 100px;
 	width: 500px;
+}
+
+#vocabularyInput::-webkit-input-placeholder {
+   color: #bbb;
+}
+#vocabularyInput:-moz-placeholder { /* Firefox 18- */
+   color: #bbb;  
+}
+#vocabularyInput::-moz-placeholder {  /* Firefox 19+ */
+   color: #bbb;  
+}
+#vocabularyInput:-ms-input-placeholder {  
+   color: #bbb;  
 }
