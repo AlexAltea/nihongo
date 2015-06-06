@@ -19,17 +19,25 @@
         <div class="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#">日本語 / NIHONGO</a></li>
+                <div class="sidebar-text">
+                    Just a collection of resources to learn japanese. Some content was taken from <i>Minna no Nihongo: Shokyuu I</i>.
+                </div>
+                <li class="sidebar-header">Tasks</li>
                 <li>
-                    <a href="#hiragana"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Hiragana</a>
+                    <a href="#/hiragana"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Hiragana</a>
                 </li>
                 <li>
-                    <a href="#katakana"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Katakana</a>
+                    <a href="#/katakana"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Katakana</a>
                 </li>
                 <li>
-                    <a href="#vocabulary"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Vocabulary</a>
+                    <a href="#/vocabulary"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Vocabulary</a>
+                </li>
+                <li class="sidebar-header">Meta</li>
+                <li>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Statistics
                 </li>
                 <li>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Stats
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configuration
                 </li>
                 <li>
                     <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> About
@@ -38,15 +46,15 @@
         </div>
         
         <!-- Main container -->
-        <div style="padding-left: 250px">
+        <div class="content-wrapper">
             <div ng-view></div>
+                
+            <hr/>
+
+            <footer>
+                <p style="color: #666; font-weight: 300">&copy; Alexandro S&aacute;nchez Bach, 2015</p>
+            </footer>
         </div>
-
-        <hr/>
-
-        <footer class="container">
-            <p style="color: #666; font-weight: 300">&copy; Alexandro S&aacute;nchez Bach, 2015</p>
-        </footer>
 
         <!-- bower:js -->
         <!-- endbower -->

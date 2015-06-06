@@ -24,7 +24,7 @@ $(document).ready(function () {
  */
  
 // Module
-var nihongo = angular.module('nihongo', ['ngResource', 'ngRoute']);
+var nihongo = angular.module('nihongo', ['LocalStorageModule', 'ngResource', 'ngRoute']);
 
 // Routing
 nihongo.config(['$routeProvider', function ($routeProvider) {
@@ -33,15 +33,15 @@ nihongo.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'views/intro.html',
         })
 		.when('/hiragana', {
-            templateUrl: 'views/hiragana.html',
+            templateUrl: 'views/tasks/hiragana.html',
             controller: 'NihongoHiraganaController'
         })
 		.when('/katakana', {
-            templateUrl: 'views/katakana.html',
+            templateUrl: 'views/tasks/katakana.html',
             controller: 'NihongoKatakanaController'
         })
         .when('/vocabulary', {
-            templateUrl: 'views/vocabulary.html',
+            templateUrl: 'views/tasks/vocabulary.html',
             controller: 'NihongoVocabularyController'
         });
 }]);

@@ -78,20 +78,20 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: '<%= yeoman.app %>/scripts/{,*/}*.js',
+                files: '<%= yeoman.app %>/scripts/**/*.js',
                 tasks: ['uglify']
             },
             styles: {
-                files: '<%= yeoman.app %>/styles/{,*/}*.css',
+                files: '<%= yeoman.app %>/styles/**/*.css',
                 tasks: ['cssmin']
             },
             views: {
-                files: '<%= yeoman.app %>/{,*/}*.html',
+                files: '<%= yeoman.app %>/**/*.html',
                 tasks: ['copy', 'wiredep', 'htmlmin']
             },
             livereload: {
                 files: [
-                    '<%= yeoman.dist %>/{,*/}*.html',
+                    '<%= yeoman.dist %>/*.html',
                     '<%= yeoman.dist %>/*.js',
                     '<%= yeoman.dist %>/*.css'
                 ],
