@@ -13,17 +13,22 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
     $scope.getNewWord = function () {
         var words = [];
         for (var i = 0; i < $scope.collections.length; i++) {
-            words = words.concat($scope.collections[i].data.words);
+            if ($scope.collections[i].active) {
+                words = words.concat($scope.collections[i].data.words);
+            }
         }
         $scope.currentWord = words[Math.floor(Math.random() * words.length)];
+        angular.element('#vocabularyInput').trigger('focus');
     };
     
     // Check input
     $scope.checkWord = function () {
-        console.log($scope.currentWord);
-        console.log($scope.currentInput);
-        if ($scope.currentWord.kana == $scope.currentInput) {
+        var expected = $scope.currentWord.kana;
+        var given = $scope.currentInput;
+        if (expected == given) {
             $scope.scoreGood += 1;
+            $scope.getNewWord();
+            $scope.currentInput = "";
         } else {
             $scope.scoreBad += 1;
         }
@@ -42,5 +47,7 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
         }
     }
     
+    // Bootstrap tooltips
+    angular.element('[data-toggle="tooltip"]').tooltip({container: 'body', html: true});
     $scope.getNewWord();
 });

@@ -1,0 +1,45 @@
+<!-- Task sidebar -->
+<div id="taskbar-wrapper">
+    <ul class="taskbar-nav">
+        <li class="taskbar-header">Demos</li>
+        <li ng-repeat="collection in collections | filter:{ source: 'demo' }">
+            <a ng-click="collection.active = !collection.active">
+                <span ng-if="collection.active">
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                </span>
+                <span ng-if="!collection.active">
+                    <span class="glyphicon glyphicon-remove-sign"></span>
+                </span>
+                <span >
+                    {{ collection.name }}
+                </span>
+            </a>
+        </li>
+        <li class="taskbar-header">Custom</li>
+        <li ng-repeat="collection in collections | filter:{ source: 'custom' }">
+            <a ng-click="collection.active = !collection.active">
+                <span ng-if="collection.active">
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                </span>
+                <span ng-if="!collection.active">
+                    <span class="glyphicon glyphicon-remove-sign"></span>
+                </span>
+                <span >
+                    {{ collection.name }}
+                </span>
+            </a>
+        </li>
+        <li><span class="glyphicon glyphicon-plus-sign"></span> New...</li>
+    </ul>
+</div>
+
+<!-- Task contents -->
+<div class="activity-wrapper">
+    <h1>Hiragana</h1>
+    
+    <p>
+        Nothing here...
+    </p>
+    
+    <hr/>
+</div>

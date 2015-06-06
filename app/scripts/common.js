@@ -2,21 +2,21 @@
  * Read URL parameters
  */
 function getParameterByName(name) {
-	name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-	var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-	var results = regex.exec(location.search);
-	return (results === null) ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return (results === null) ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
 /**
  * Common initialization tasks
  */
 $(document).ready(function () {
-	// Configuration file was given
-	var configUrl = getParameterByName('config');
-	if (configUrl) {
-		configLoadFile(configUrl);
-	}
+    // Configuration file was given
+    var configUrl = getParameterByName('config');
+    if (configUrl) {
+        configLoadFile(configUrl);
+    }
 });
 
 /**
@@ -32,11 +32,11 @@ nihongo.config(['$routeProvider', function ($routeProvider) {
         .when('/', {
             templateUrl: 'views/intro.html',
         })
-		.when('/hiragana', {
+        .when('/hiragana', {
             templateUrl: 'views/tasks/hiragana.html',
             controller: 'NihongoHiraganaController'
         })
-		.when('/katakana', {
+        .when('/katakana', {
             templateUrl: 'views/tasks/katakana.html',
             controller: 'NihongoKatakanaController'
         })
