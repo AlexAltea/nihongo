@@ -38,7 +38,7 @@
     <h1>Vocabulary</h1>
     
     <p>
-        You are given a series of words coming from the chosen exercise sets of the left column. Your task is to type the corresponding japanese words in romaji. Following rules apply:
+        Choose from the left column the word collections you want to learn. Then write for each given word the corresponding japanese word in romaji. Following rules apply:
         <ul>
             <li>Hiragana is written via lowercase characters. E.g. <i>watashi -> わたし</i></li>
             <li>Katakana is written via uppercase characters. E.g. <i>KAMERA -> カメラ</i></li>
@@ -48,10 +48,6 @@
     </p>
     
     <hr/>
-    
-    <span>{{ currentWord }}</span>
-    {{ scoreGood }} {{ scoreBad }}
-    <hr/>
         
     <form ng-submit="checkWord()">
         <span><b>Word:</b></span>
@@ -60,6 +56,21 @@
         <span><b>Input:</b></span>
         <input type="text" class="form-control" ng-model="currentInput" id="vocabularyInput" />
         
-        <button type="button" class="btn btn-primary">Submit</button>
+        <br/>
+        
+        <button class="btn btn-primary" type="submit" data-toggle="tooltip" data-placement="bottom" title="Just press <i>Enter</i>">
+            <span class="glyphicon glyphicon-check"></span> Submit
+        </button>
+        <button class="btn btn-warning"  data-toggle="tooltip" data-placement="bottom" title="Just press <i>Esc</i>">
+            <span class="glyphicon glyphicon-share-alt"></span> Skip
+        </button>
     </form>
+    
+    <hr/>
+    
+    <b>Results</b>
+    <ul>
+        <li>Correct answers: {{ scoreGood }}</li>
+        <li>Incorrect answers: {{ scoreBad }}</li>
+    </ul>
 </div>
