@@ -40,16 +40,16 @@
     <p>
         Choose from the left column the word collections you want to learn. Then write for each given word the corresponding japanese word in romaji. Following rules apply:
         <ul>
-            <li>Hiragana is written via lowercase characters. E.g. <i>watashi -> わたし</i></li>
-            <li>Katakana is written via uppercase characters. E.g. <i>KAMERA -> カメラ</i></li>
-            <li>A katakana dash is written via a minus character. E.g. <i>NO-TO -> ノート</i></li>
-            <li>A っ/ッ-pause is written by repeating the first consonant of the next syllable. E.g. <i>kitte -> きって</i> or <i>KOPPU -> コップ</i></li>
+            <li>Hiragana is written via lowercase characters. E.g. <i><code>watashi</code> &rarr; わたし</i></li>
+            <li>Katakana is written via uppercase characters. E.g. <i><code>KAMERA</code> &rarr; カメラ</i></li>
+            <li>A katakana dash is written via a minus character. E.g. <i><code>NO-TO</code> &rarr; ノート</i></li>
+            <li>A っ/ッ-pause is written by repeating the first consonant of the next syllable. E.g. <i><code>kitte</code> &rarr; きって</i> or <i><code>KOPPU</code> &rarr; コップ</i></li>
         </ul>
     </p>
     
     <hr/>
         
-    <form ng-submit="checkWord()">
+    <form>
         <span><b>Word:</b></span>
         <span>{{ currentWord.meaning }}</span>
         <br/>
@@ -58,10 +58,10 @@
         
         <br/>
         
-        <button class="btn btn-primary" type="submit" data-toggle="tooltip" data-placement="bottom" title="Just press <i>Enter</i>">
+        <button ng-click="checkInput()" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Just press <i>Enter</i>">
             <span class="glyphicon glyphicon-check"></span> Submit
         </button>
-        <button class="btn btn-warning"  data-toggle="tooltip" data-placement="bottom" title="Just press <i>Esc</i>">
+        <button ng-click="getNewWord()" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Just press <i>Esc</i>">
             <span class="glyphicon glyphicon-share-alt"></span> Skip
         </button>
     </form>

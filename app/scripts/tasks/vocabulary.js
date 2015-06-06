@@ -22,16 +22,31 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
     };
     
     // Check input
-    $scope.checkWord = function () {
-        var expected = $scope.currentWord.kana;
-        var given = $scope.currentInput;
+    $scope.checkInput = function () {
+        var expected = $scope.currentWord.kana.trim();
+        var given = $scope.currentInput.trim();
+        var ignoredChars = ["〜","~"," "];
+        for (var i = 0; i < ignoredChars.length; i++) {
+            expected = expected.replace(ignoredChars[i], "");
+            given = given.replace(ignoredChars[i], "");
+        }
+        given = given.replace("n", "ん");
+        given = given.replace("N", "ン");
+        
         if (expected == given) {
             $scope.scoreGood += 1;
-            $scope.getNewWord();
-            $scope.currentInput = "";
-        } else {
-            $scope.scoreBad += 1;
         }
+        else {
+            $scope.scoreBad += 1;
+            var message = "Wrong! The correct answer for \'" + $scope.currentWord.meaning + "\' is:\n\n";
+            message += !$scope.currentWord.romaji ? "" : "Romaji: " + $scope.currentWord.romaji + "\n";
+            message += !$scope.currentWord.kana ? "" : "Kana: " + $scope.currentWord.kana + "\n";
+            message += !$scope.currentWord.kanji ? "" : "Kanji: " + $scope.currentWord.kanji + "\n";
+            alert(message);
+        }
+        
+        $scope.getNewWord();
+        $scope.currentInput = "";
     }
     
     // Initialization
@@ -49,5 +64,15 @@ nihongo.controller('NihongoVocabularyController', function ($scope, localStorage
     
     // Bootstrap tooltips
     angular.element('[data-toggle="tooltip"]').tooltip({container: 'body', html: true});
+    
+    // Events
+    angular.element('#vocabularyInput').keyup(function(e) {
+        // ESC key
+        if (e.keyCode == 27) {
+            $scope.getNewWord();
+            $scope.$apply();
+        }
+    });
+    
     $scope.getNewWord();
 });
