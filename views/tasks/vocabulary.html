@@ -1,0 +1,65 @@
+<!-- Task sidebar -->
+<div id="taskbar-wrapper">
+    <ul class="taskbar-nav">
+        <li class="taskbar-header">Demos</li>
+        <li ng-repeat="collection in collections | filter:{ source: 'demo' }">
+            <a ng-click="collection.active = !collection.active">
+                <span ng-if="collection.active">
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                </span>
+                <span ng-if="!collection.active">
+                    <span class="glyphicon glyphicon-remove-sign"></span>
+                </span>
+                <span >
+                    {{ collection.name }}
+                </span>
+            </a>
+        </li>
+        <li class="taskbar-header">Custom</li>
+        <li ng-repeat="collection in collections | filter:{ source: 'custom' }">
+            <a ng-click="collection.active = !collection.active">
+                <span ng-if="collection.active">
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                </span>
+                <span ng-if="!collection.active">
+                    <span class="glyphicon glyphicon-remove-sign"></span>
+                </span>
+                <span >
+                    {{ collection.name }}
+                </span>
+            </a>
+        </li>
+        <li><span class="glyphicon glyphicon-plus-sign"></span> New...</li>
+    </ul>
+</div>
+
+<!-- Task contents -->
+<div class="activity-wrapper">
+    <h1>Vocabulary</h1>
+    
+    <p>
+        You are given a series of words coming from the chosen exercise sets of the left column. Your task is to type the corresponding japanese words in romaji. Following rules apply:
+        <ul>
+            <li>Hiragana is written via lowercase characters. E.g. <i>watashi -> わたし</i></li>
+            <li>Katakana is written via uppercase characters. E.g. <i>KAMERA -> カメラ</i></li>
+            <li>A katakana dash is written via a minus character. E.g. <i>NO-TO -> ノート</i></li>
+            <li>A っ/ッ-pause is written by repeating the first consonant of the next syllable. E.g. <i>kitte -> きって</i> or <i>KOPPU -> コップ</i></li>
+        </ul>
+    </p>
+    
+    <hr/>
+    
+    <span>{{ currentWord }}</span>
+    {{ scoreGood }} {{ scoreBad }}
+    <hr/>
+        
+    <form ng-submit="checkWord()">
+        <span><b>Word:</b></span>
+        <span>{{ currentWord.meaning }}</span>
+        <br/>
+        <span><b>Input:</b></span>
+        <input type="text" class="form-control" ng-model="currentInput" id="vocabularyInput" />
+        
+        <button type="button" class="btn btn-primary">Submit</button>
+    </form>
+</div>
