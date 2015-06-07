@@ -22,7 +22,7 @@ var config = {
           {"romaji":"gakusei", "kana":"がくせい", "kanji":"学生", "meaning":"Student/-in"},
           {"romaji":"kaishain", "kana":"かいしゃいん", "kanji":"会社員", "meaning":"Angestellte/-r"},
           {"romaji":"shain", "kana":"しゃいん", "kanji":"社員", "meaning":"Angestellte/-r einer Firma (wird im Zusammenhang mit dem Firmennamen verwendet)"},
-          {"romaji":"ginkoin", "kana":"ぎんこういん", "kanji":"銀行員", "meaning":"Bankangestellte/-r"},
+          {"romaji":"ginkouin", "kana":"ぎんこういん", "kanji":"銀行員", "meaning":"Bankangestellte/-r"},
           {"romaji":"isha", "kana":"いしゃ", "kanji":"医者", "meaning":"Artz, Ärtzin"},
           {"romaji":"kenkyuusha", "kana":"けんきゅうしゃ", "kanji":"研究者", "meaning":"Forscher/-in"},
           {"romaji":"daigaku", "kana":"だいがく", "kanji":"大学", "meaning":"Universität"},
