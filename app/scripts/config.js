@@ -69,8 +69,8 @@ var config = {
           {"romaji":"kuruma", "kana":"くるま", "kanji":"車", "meaning":"Auto, Wagen"},
           {"romaji":"tsukue", "kana":"つくえ", "kanji":"机", "meaning":"Schreibtisch"},
           {"romaji":"isu", "kana":"いす", "kanji":"", "meaning":"Stuhl"},
-          {"romaji":"chokore-to", "kana":"", "kanji":"", "meaning":"Schokolade"},
-          {"romaji":"co-hi-", "kana":"", "kanji":"", "meaning":"Kaffee"},
+          {"romaji":"chokore-to", "kana":"チョコレート", "kanji":"", "meaning":"Schokolade"},
+          {"romaji":"co-hi-", "kana":"コーヒー", "kanji":"", "meaning":"Kaffee"},
           {"romaji":"[o]miyage", "kana":"[お]みやげ", "kanji":"[お]土産", "meaning":"Mitbringsel, Souvenir, Geschenk"},
           {"romaji":"eigo", "kana":"えいご", "kanji":"英語", "meaning":"Englisch"},
           {"romaji":"nihongo", "kana":"にほんご", "kanji":"日本語", "meaning":"Japanisch"},
@@ -278,7 +278,7 @@ var config = {
           {"romaji":"sorekara", "kana":"それから", "kanji":"", "meaning":"danach, dann"},
           {"romaji":"ee", "kana":"ええ", "kanji":"", "meaning":"ja"},
           {"romaji":"iidesune", "kana":"いいですね", "kanji":"", "meaning":"Das hört sich gut an / Gute Idee! (wörtl.: Das ist gut)"},
-          {"romaji":"wakarimashita", "kana":"ｗかりました", "kanji":"", "meaning":"Ich habe verstanden"}
+          {"romaji":"wakarimashita", "kana":"わかりました", "kanji":"", "meaning":"Ich habe verstanden"}
         ]
       }
     }
