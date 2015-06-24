@@ -216,11 +216,11 @@ var config = {
           {"romaji":"kotoshi", "kana":"ことし", "kanji":"", "meaning":"dieses Jahr"},
           {"romaji":"rainen", "kana":"らいねん", "kanji":"来年", "meaning":"das nächste Jahr, nächstes Jahr"},
           {"romaji":"〜nen", "kana":"〜ねん", "kanji":"〜年", "meaning":"im Jahr 〜"},
-          {"romaji":"nannen", "kana":"なねん", "kanji":"何年", "meaning":"in welchem Jahr"},
+          {"romaji":"nannen", "kana":"なんねん", "kanji":"何年", "meaning":"in welchem Jahr"},
           {"romaji":"〜gatsu", "kana":"〜がつ", "kanji":"〜月", "meaning":"〜 Monat (Januar, Februar, etc.)"},
           {"romaji":"nangatsu", "kana":"なんがつ", "kanji":"何月", "meaning":"welcher Monat"},
           {"romaji":"〜nichi", "kana":"〜にち", "kanji":"〜日", "meaning":"der 〜-te des Monats, 〜 Tage"},
-          {"romaji":"nannichi", "kana":"なんいち", "kanji":"何日", "meaning":"welcher Tag, wie viele Tage"},
+          {"romaji":"nannichi", "kana":"なんにち", "kanji":"何日", "meaning":"welcher Tag, wie viele Tage"},
           {"romaji":"itsu", "kana":"いつ", "kanji":"", "meaning":"wann"},
           {"romaji":"tanjoubi", "kana":"たんじょうび", "kanji":"誕生日", "meaning":"Geburtstag"}
         ]
