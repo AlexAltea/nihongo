@@ -212,7 +212,7 @@ var config = {
           {"romaji":"sengetsu", "kana":"せんげつ", "kanji":"先月", "meaning":"der letzte Monat, letzten Monat"},
           {"romaji":"kongetsu", "kana":"こんげつ", "kanji":"今月", "meaning":"diesen/r Monat"},
           {"romaji":"raigetsu", "kana":"らいげつ", "kanji":"来月", "meaning":"der nächste Monat, nächsten Monat"},
-          {"romaji":"kyonen", "kana":"きょうねん", "kanji":"去年", "meaning":"das letzte Jahr, letztes Jahr"},
+          {"romaji":"kyonen", "kana":"きょねん", "kanji":"去年", "meaning":"das letzte Jahr, letztes Jahr"},
           {"romaji":"kotoshi", "kana":"ことし", "kanji":"", "meaning":"dieses Jahr"},
           {"romaji":"rainen", "kana":"らいねん", "kanji":"来年", "meaning":"das nächste Jahr, nächstes Jahr"},
           {"romaji":"〜nen", "kana":"〜ねん", "kanji":"〜年", "meaning":"im Jahr 〜"},
