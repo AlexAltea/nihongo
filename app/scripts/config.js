@@ -247,7 +247,7 @@ var config = {
           {"romaji":"hirugohan", "kana":"ひるごはん", "kanji":"昼ごはん", "meaning":"Mittagessen"},
           {"romaji":"bangohan", "kana":"ばんごはん", "kanji":"晩ごはん", "meaning":"Abendessen"},
           {"romaji":"pan", "kana":"パン", "kanji":"", "meaning":"Brot"},
-          {"romaji":"tamago", "kana":"ｔまご", "kanji":"卵", "meaning":"Ei"},
+          {"romaji":"tamago", "kana":"たまご", "kanji":"卵", "meaning":"Ei"},
           {"romaji":"niku", "kana":"にく", "kanji":"肉", "meaning":"Fleisch (Fischfleisch ist nicht inbegriffen)"},
           {"romaji":"sakana", "kana":"さかな", "kanji":"魚", "meaning":"Fisch"},
           {"romaji":"yasai", "kana":"やさい", "kanji":"野菜", "meaning":"Gemüse"},
